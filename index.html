@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="inicio">
+        <h1>Bienvenido a mi portafolio</h1>
+        <p>¡Hola! Soy Brayan David Avila Orozco, soy tecnico en programación de sofware. Mi pasión por la tecnologia y el comercio me ha llevado a trabajar en proyectos mios personales, como sistemas de gestión. En este portafolio, encontrarás ejemplos de mi trabajo y más sobre mí. ¡Disfruta explorando!</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="sobre-mi" class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Sobre mí</h2>
+                    <p class="card-text">Hola, soy Brayan David Avila Orozco. Me apasiona la programación y la economía, , he dedicado mi tiempo como administrador de un pequeño negocio y como desarrollador web. Mi enfoque principal es la implementación de nuevas tecnologias en la economía. Además de mi trabajo, me encanta el comercio. Siempre estoy para aprender y buscar oportunidades de agilizar los procesos comerciales o administrativos mediantes las tecnologias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="img/miFoto.jpg" alt="Brayan David Avila Orozco" class="img-fluid">
+        </div>
+    </div>
+    <section id="habilidades" class="card">
+        <div class="container">
+            <h2>Mis Habilidades</h2>
+            <div class="row">
+                <div class="col-md-6">
+                <h4>Desarrollo Web</h4>
+                <ul class="list-unstyled">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="portafolio">
+        <h2>Portafolio</h2>
+        <p>Aquí encontrarás algunos de mis proyectos más recientes:</p>
+        <div id="carouselProyectos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="ruta-a-imagen.jpg" class="card-img-top" alt="Nombre del Proyecto">
+                            <div class="card-body">
+                                <h5 class="card-title">cashflow master</h5>
+                                <p class="card-text">Es un sistema de administracion financiera que te va a permitir o facilitar la toma de decisiones en tu negocio.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="ruta-a-imagen.jpg" class="card-img-top" alt="Nombre del Proyecto">
+                            <div class="card-body">
+                                <h5 class="card-title">Gestor de pedidos</h5>
+                                <p class="card-text">Es un sistema de administracion de pedidos que te va a permitir tener un control sobre la cantidad pedidos y el presupuesto de tu negocio.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="ruta-a-imagen.jpg" class="card-img-top" alt="Nombre del Proyecto">
+                            <div class="card-body">
+                                <h5 class="card-title">Este portafolio</h5>
+                                <p class="card-text">Es una pagina web con el fin de exponerme a mi mismo como persona y darme a conocer a traves de mis proyectos</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Otros items del carrusel -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+        
+    <div id="contacto">
+            <h2>Contacto</h2>
+            <p>¡Me encantaría saber de ti! Puedes contactarme a través de este formulario o en mis redes sociales:</p>
+            <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+    </div>
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contáctame</h5>
+                    <p>Email: brayandavidavilaorozco@gmail.com</p>
+                    <p>Teléfono: +57 3015658710</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Sígueme</h5>
+                    <p><a href="https://tiktok.com/brayanavila14" class="text-light">tik tok</a></p>
+                    <p><a href="https://www.instagram.com/brayanavila14/" class="text-light">Instagram</a></p>
+                    <p><a href="https://www.facebook.com/brayanavila14" class="text-light">Facebook</a></p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="text-center">© 2023 Brayan Avila</p>
+                </div>
+            </div>
+        </div>
+    </footer>      
+<script src="js/main.js"></script>
+</body>
+</html>
