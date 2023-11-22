@@ -1,5 +1,7 @@
-// JavaScript para cambiar al modo oscuro
-const toggleModoOscuro = () => {
-    const body = document.body;
-    body.classList.toggle('modo-oscuro');
-};
+$(document).ready(function() {
+    let formularioContacto = $('#formulario');
+
+    $('#btn-send').click(function() {
+        formularioContacto[0].reset();
+    });
+});

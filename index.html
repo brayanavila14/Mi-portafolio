@@ -62,7 +62,7 @@
                     <h2 class="card-title">Mis Habilidades</h2>
                     <p class="card-text">con experiencia en PHP, CSS, JavaScript, HTML y MySQL. Mi enfoque se centra en crear experiencias digitales únicas y funcionales.
 
-                        Con más de [inserta el número de años o meses] de práctica en el desarrollo web, he trabajado con lenguajes y herramientas clave para construir sitios web dinámicos y atractivos. Mi habilidad para utilizar plataformas como GitHub como repositorio demuestra mi compromiso con las mejores prácticas de desarrollo y control de versiones.
+                        Con no más de 6 meses de práctica en el desarrollo web, he trabajado con lenguajes y herramientas clave para construir sitios web dinámicos y atractivos. Mi habilidad para utilizar plataformas como GitHub como repositorio demuestra mi compromiso con las mejores prácticas de desarrollo y control de versiones.
                         
                         Pero mi interés no se limita solo al código. También tengo experiencia en el mundo empresarial, con habilidades en administración, comunicación y resolución de problemas. Esta combinación me permite no solo crear soluciones técnicas, sino comprender cómo estas se alinean con los objetivos comerciales.
                         
@@ -84,16 +84,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">cashflow master</h5>
                                 <p class="card-text">Es un sistema de administracion financiera que te va a permitir o facilitar la toma de decisiones en tu negocio.</p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="ruta-a-imagen.jpg" class="card-img-top" alt="Nombre del Proyecto">
-                            <div class="card-body">
-                                <h5 class="card-title">Gestor de pedidos</h5>
-                                <p class="card-text">Es un sistema de administracion de pedidos que te va a permitir tener un control sobre la cantidad pedidos y el presupuesto de tu negocio.</p>
                                 <a href="#" class="btn btn-primary">Ver más</a>
                             </div>
                         </div>
@@ -136,20 +126,20 @@
     <div id="contacto">
             <h2>Contacto</h2>
             <p>¡Me encantaría saber de ti! Puedes contactarme a través de este formulario o en mis redes sociales:</p>
-            <form>
+            <form id="formulario" action="php/procesarFormulario.php" method="post">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre">
+                <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com">
+                <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com" required>
             </div>
             <div class="mb-3">
                 <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" id="btn-send" class="btn btn-primary">Enviar</button>
             </form>
     </div>
     <footer class="bg-dark text-light py-4">
